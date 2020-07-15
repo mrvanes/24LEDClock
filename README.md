@@ -3,7 +3,7 @@ LED Clock using 24 neopixel ring
 
 An Arduino project
 
-The ring only consists of 24LEDs so I created a clock that makes use of fractional brightness to display a smooth progressing 12hr clock and seconds dial using three free to choose colors.
+The ring only consists of 24LEDs so I created a clock that makes use of fractional brightness to display a smooth progressing 12hr hour and minutes dial using three free to choose colors.
 
 [Thingiverse 24 LED Light Clock](https://www.thingiverse.com/thing:4541805)
 

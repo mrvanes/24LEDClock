@@ -15,3 +15,15 @@ The app depends on the following libraries. They must either be downloaded from 
 - [FastLED](https://github.com/FastLED/FastLED)
 - [Sketch Data Upload Tool](https://github.com/esp8266/arduino-esp8266fs-plugin/releases/download/0.2.0/ESP8266FS-0.2.0.zip)
 
+# Compiling
+Create a file Secrets.h and fill in these settings:
+```
+// Wi-Fi network to connect to (if not in AP mode)
+char* ssid = "<SSID of your choice>";
+char* password = "<required password>";
+
+// AP mode password
+const char WiFiAPPSK[] = "<AP password>";
+```
+
+The Sketch needs the contents of the data directory on filesystem (for the webinterface), so choose a memory model that has FS:1Mb under *Tools* -> *Flash Size*. Then, after flashing upload the data using the Sketch Data Upload Tool in *Tools* -> *ESP8266 Sketch Data Upload*.
